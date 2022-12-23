@@ -1,0 +1,21 @@
+{
+  "name": "token-snooper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "🐶.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 🐶.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihailnicamn/token-snooper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihailnicamn/token-snooper/issues"
+  },
+  "homepage": "https://github.com/mihailnicamn/token-snooper#readme"
+}

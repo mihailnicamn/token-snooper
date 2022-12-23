@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<input type="number" placeholder="Step (seconds)" id="step">
+<button id="start"> start </button>
+<button id="pause"> pause </button>
+<button id="stop"> stop </button>
+<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+<div id="description"></div>
+<script>
+    window.token_data = JSON.parse('{{ARCHIVE_DATA}}');
+    window.steps = [];
+    window.main_fn = function () {
+        const transaction_count = window.token_data.transfers.length;
+        const step = window.values.step;
+        const step_time = step * 1000;
+        const range_slider = document.getElementById("myRange");
+        //set attributes to range slider min 1 and max transaction_count
+        range_slider.min = 1;
+        range_slider.max = transaction_count;
+        if(window.steps.length > 0){
+            window.steps.forEach(function (step) {
+                clearTimeout(step);
+            });
+            //clear description
+            window.elements.description.innerHTML = "";
+        }
+        window.steps = [];
+        window.token_data.transfers.forEach(function (transaction,_i) {
+            window.steps.push(setTimeout(function () {
+                window.load_transaction(transaction);
+                console.log(_i+1)
+                range_slider.value = _i+1;
+            }, _i * step_time));
+        });
+    };
+    window.load_transaction = (transaction) => {
+        window.elements.description.innerHTML += transaction.from + " sent " + parseInt(transaction.value)/(10**parseInt(transaction.decimals)) + " to " + transaction.to + "<br>";
+    }
+    
+
+    window.values = {
+        step: 2
+    }
+    window.listeners = {
+        start: function () {
+            console.log("start")
+            window.main_fn();
+        },
+        pause: function () {
+            console.log("pause");
+
+        },
+        stop: function () {
+            console.log("stop");
+            //clear all timeouts
+            window.steps.forEach(function (step) {
+                clearTimeout(step);
+            });
+            //clear description
+            window.elements.description.innerHTML = "";
+        },
+        step: function () {
+            console.log(window.values.step)
+            console.log("step");
+            window.main_fn();
+        }
+    };
+    window.elements = {
+        start: document.getElementById("start"),
+        pause: document.getElementById("pause"),
+        stop: document.getElementById("stop"),
+        step: document.getElementById("step"),
+        description: document.getElementById("description")
+    };
+
+    window.elements.start.onclick = function () {
+        window.listeners.start();
+    };
+    window.elements.pause.onclick = function () {
+        window.listeners.pause();
+    };
+    window.elements.stop.onclick = function () {
+        window.listeners.stop();
+    };
+    window.elements.step.onchange = function () {
+        window.values.step = window.elements.step.value;
+        window.listeners.step();
+    };
+
+
+</script>
+
+</html>

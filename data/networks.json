@@ -1,0 +1,194 @@
+{
+    "Avalanche": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/avalanche",
+            "chainId": "43114"
+        },
+        "testnet": {
+            "rpc": "https://localhost:9650/ext/bc/C/rpc",
+            "chainId": "43112"
+        }
+    },
+    "Binance Smart Chain": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/bsc",
+            "chainId": "56"
+        },
+        "testnet": {
+            "rpc": "https://data-seed-prebsc-1-s1.binance.org:8545",
+            "chainId": "97"
+        }
+    },
+    "Cronos": {
+        "mainnet": {
+            "rpc": "https://evm-cronos.crypto.org",
+            "chainId": "25"
+        }
+    },
+    "Elastos": {
+        "mainnet": {
+            "rpc": "https://api.elastos.io/eth",
+            "chainId": "20"
+        }
+    },
+    "Ethereum": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/eth",
+            "chainId": "0x1"
+        },
+        "testnet": {
+            "rpc": "https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+            "chainId": "0x6"
+        }
+    },
+    "Fantom": {
+        "mainnet": {
+            "rpc": "https://rpc.ftm.tools/",
+            "chainId": "0xfa"
+        },
+        "testnet": {
+            "rpc": "https://rpc.testnet.fantom.network/",
+            "chainId": "0xfa2"
+        }
+    },
+    "Fuse": {
+        "mainnet": {
+            "rpc": "https://rpc.fuse.io",
+            "chainId": "0x7a"
+        }
+    },
+    "Huobi Eco Chain": {
+        "mainnet": {
+            "rpc": "https://http-mainnet-node.huobichain.com/",
+            "chainId": "128"
+        },
+        "testnet": {
+            "rpc": "https://http-testnet.hecochain.com",
+            "chainId": "256"
+        }
+    },
+    "Kucoin Chain": {
+        "mainnet": {
+            "rpc": "https://rpc-mainnet.kcc.network",
+            "chainId": "321"
+        },
+        "testnet": {
+            "rpc": "https://rpc-testnet.kcc.network",
+            "chainId": "322"
+        }
+    },
+    "Polygon Matic": {
+        "mainnet": {
+            "rpc": "https://matic-mainnet.chainstacklabs.com",
+            "chainId": "0x89"
+        },
+        "testnet": {
+            "rpc": "https://rpc-mumbai.maticvigil.com",
+            "chainId": "0x13881"
+        }
+    },
+    "Moonriver": {
+        "mainnet": {
+            "rpc": "https://rpc.moonriver.moonbeam.network",
+            "chainId": "1285"
+        }
+    },
+    "OKEx": {
+        "mainnet": {
+            "rpc": "https://exchainrpc.okex.org",
+            "chainId": "66"
+        }
+    },
+    "Telos": {
+        "mainnet": {
+            "rpc": "https://mainnet.telos.net/evm",
+            "chainId": "40"
+        }
+    },
+    "Harmony": {
+        "mainnet": {
+            "rpc": "https://harmony-mainnet.chainstacklabs.com",
+            "chainId": "0x63564c40"
+        },
+        "testnet": {
+            "rpc": "https://api.s0.b.hmny.io",
+            "chainId": "0x6357d2e0"
+        }
+    },
+    "Ubiq": {
+        "mainnet": {
+            "rpc": "https://rpc.octano.dev",
+            "chainId": "8"
+        }
+    },
+    "Gnosis": {
+        "mainnet": {
+            "rpc": "https://rpc.gnosischain.com",
+            "chainId": "0x64"
+        }
+    },
+    "Nahmii": {
+        "mainnet": {
+            "rpc": "https://l2.nahmii.io",
+            "chainId": "5551"
+        },
+        "testnet": {
+            "rpc": "https://l2.testnet.nahmii.io",
+            "chainId": "5553"
+        }
+    },
+    "IoTeX": {
+        "mainnet": {
+            "rpc": "https://babel-api.mainnet.iotex.io",
+            "chainId": "4689"
+        }
+    },
+    "Hoo": {
+        "mainnet": {
+            "rpc": "https://http-mainnet.hoosmartchain.com",
+            "chainId": "70"
+        }
+    },
+    "Celo": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/celo",
+            "chainId": "42220"
+        }
+    },
+    "Near": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/near",
+            "chainId": ""
+        }
+    },
+    "Arbitrum": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/arbitrum",
+            "chainId": "42161"
+        }
+    },
+    "Solana": {
+        "mainnet": {
+            "rpc": "https://rpc.ankr.com/solana",
+            "chainId": ""
+        }
+    },
+    "SmartBCH": {
+        "mainnet": {
+            "rpc": "https://smartbch.fountainhead.cash/mainnet",
+            "chainId": "10000"
+        }
+    },
+    "Condor": {
+        "testnet": {
+            "rpc": "https://testnet.condor.systems/rpc",
+            "chainId": "188881"
+        }
+    },
+    "Pando": {
+        "mainnet": {
+            "rpc": "https://eth-rpc-api.pandoproject.org/rpc",
+            "chainId": "398"
+        }
+    }
+}
