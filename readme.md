@@ -13,3 +13,7 @@ working at the moment :
 ``` npm start load <token_address> ```
 
 ``` npm start load 0xdac17f958d2ee523a2206206994597c13d831ec7 ``` # usdt on ethereum (if you got spare time 😅)
+
+
+toTest: 
+- try running custom local node with custom config (workaround for the query limit, it may result in near instant data retrieving)
