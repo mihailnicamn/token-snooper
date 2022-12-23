@@ -1,3 +1,5 @@
+draft of token snooper 🐶
+
 parse relevant statistics : 
 - number of new addreses on timeseries (each spike without catalyst (airdrop/release/anything) may show fake addreses)
 - number of in-and-out addresses on timeseries (each spike without catalyst may show wash trading done with burner addresses)
