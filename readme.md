@@ -5,6 +5,8 @@ parse relevant statistics :
 - number of in-and-out addresses on timeseries (each spike without catalyst may show wash trading done with burner addresses)
 - number of transactions on timeseries (relative activity of token)
 - if easy solution 😅, https://observablehq.com/@d3/collapsible-tree tree structure view with the ability to replay the transactions (to get common sens about the tokens general activity)
+- tag addreses (swaps/vaults/launchpads) using web3.js directly or even using etherscan/networks blockexplorers with api
+- test if "buyable"/transferable to identify honeypots
 
 
 working at the moment :
@@ -19,3 +21,6 @@ working at the moment :
 
 toTest: 
 - try running custom local node with custom config (workaround for the query limit, it may result in near instant data retrieving)
+
+
+final toughts : that's an old idea trying to identify the legitimacy of an token, meanwhile the best solution seems to be https://gitcoin.co/hackathon/ethshanghai/projects/15416/scam-sniffer/activity? https://scamsniffer.io/ [not tested, i dont even know what compatible networks are, with time it'll become the standard ref (it's the adblock of web3)]
